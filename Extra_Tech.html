@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Montserrat+Subrayada&family=Poppins:wght@600&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Montserrat+Subrayada&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        /* background-color: rgb(0, 0, 33); */
+        /* background-color: white; */
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* height: 80%; */
+        height: 50px;
+        /* background-color: rgb(18, 18, 62) ; */
+        background-color: rgb(249, 245, 245);
+        position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        margin: 0 23px;
+        font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+          sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+      }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      nav ul li a:hover {
+        color: tomato;
+        font-weight: bold;
+      }
+
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        position: relative;
+        right: 250px;
+        
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 10px;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        /* width: 100vw; */
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftsection {
+        /* background-color: red; */
+        font-size: 2rem;
+        color: gray;
+        margin: 82px 96px;
+        position: relative;
+        left: 30px;
+
+      }
+
+      .leftsection .btn {
+        padding: 12px;
+        background: rgb(116 122 97);
+        color: white;
+        border: 2px solid black;
+        border-radius: 18px;
+        font-size: 15px;
+        cursor: pointer;
+        position: relative;
+        top: 25px;
+      }
+
+      .leftsection .btn a {
+        font-style: none;
+        color: white;
+        text-decoration: none;
+      }
+
+      .rightsection img {
+          position: relative;
+          right: 550px;
+          height: 408px  
+    }
+
+
+      .purple {
+        color: rgb(85, 54, 114);
+        /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        /* font-family: fantasy; */
+
+        /* font-family: "Montserrat Subrayada", sans-serif; */
+        font-family: 'Handjet', cursive;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+        display: flex;
+        flex-direction: column;
+
+      }
+      .purple :hover {
+        color: tomato;
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(85, 54, 114);
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 1.1rem;
+        font-family: "Montserrat Subrayada", sans-serif;
+      }
+
+      .secondSection .box {
+        background: black;
+        width: 79vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: black;
+        margin: 0 120px;
+      }
+
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: black;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      footer {
+        /* height: 233px; */
+        background-color: rgb(249, 245, 245);
+      }
+
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px;
+        font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+          sans-serif;
+        font-size: 13px;
+      }
+
+      footer .footer-first {
+        font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+          sans-serif;
+        font-size: 13px;
+        position: relative;
+        top: 62px;
+      }
+
+
+
+      nav .left .img{
+        width: 20px;
+      }
+
+/* 
+
+
+      @media screen and (max-width: 300px) {
+
+        body{
+          
+        }
+        .firstSection{
+          flex-direction: column-reverse;
+        }
+      }
+        
+  
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left", style="opacity: 50%;"><img src="Extra Tech Black png.png" alt="Extra Tech logo"></div>
+
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftsection">
+          <p style="font-size: 18px;">Welcome, we are </p>
+          <span class="purple">Extra Tech</span>
+
+          <div class="slogan">Building Tech Visionaries</div>
+          </div>
+        </div>
+        <div></div>
+
+        <div class="rightsection">
+          <img src="hire png.png" alt="hiring jpeg" />
+        </div>
+        <!-- <lord-icon
+    src="https://cdn.lordicon.com/oaflahpk.json"
+    trigger="hover"
+    colors="primary:#4bb3fd"
+    style="width:250px;height:250px">
+</lord-icon> -->
+      </section>
+
+      <!-- Experience Section-->
+
+      <hr />
+
+      <section class="secondSection">
+        <!-- <span class="text-gray"> What i have Done so far </span> -->
+        <h1>Work Experience</h1>
+        <div class="box">
+          <!-- 1st Experience -->
+
+          <div class="vertical">
+            <img class="image-top" src="python.png" alt="dev logo" />
+            <div class="vertical-title">Python Developer (2019-2020)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              doloribus, ipsum hic nisi sapiente, alias molestiae modi sint
+              reiciendis in tempore quae enim?
+            </div>
+          </div>
+
+          <!-- 2nd Experience -->
+
+          <div class="vertical">
+            <img class="image-top" src="js.png" alt="dev logo" />
+            <div class="vertical-title">JavaScript Developer (2020-2021)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              doloribus, ipsum hic nisi sapiente, alias molestiae modi sint
+              reiciendis in tempore quae enim?
+            </div>
+          </div>
+
+          <!-- 3rd Experience -->
+
+          <div class="vertical">
+            <img class="image-top" src="java.png" alt="dev logo" />
+            <div class="vertical-title">Java Developer (2021-2022)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              doloribus, ipsum hic nisi sapiente, alias molestiae modi sint
+              reiciendis in tempore quae enim?
+            </div>
+          </div>
+
+          <!-- 4th Experience -->
+
+          <div class="vertical">
+            <img class="image-top" src="android.png" alt="dev logo" />
+            <div class="vertical-title">Android Developer (2022-2023)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              doloribus, ipsum hic nisi sapiente, alias molestiae modi sint
+              reiciendis in tempore quae enim?
+            </div>
+          </div>
+
+          <!-- 5th Experience -->
+
+          <div class="vertical">
+            <img class="image-top" src="google.png" alt="dev logo" />
+            <div class="vertical-title">
+              Software Engineer - Google (2023 - present)
+            </div>
+
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              doloribus, ipsum hic nisi sapiente, alias molestiae modi sint
+              reiciendis in tempore quae enim?
+            </div>
+          </div>
+
+          <!-- upcoming Experience -->
+        </div>
+      </section>
+
+      <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+      <lord-icon
+        src="https://cdn.lordicon.com/hjbsbdhw.json"
+        trigger="hover"
+        colors="primary:#3a3347,secondary:#f24c00,tertiary:#b26836,quaternary:#ebe6ef"
+        style="width: 100px"
+      >
+      </lord-icon>
+
+      <!-- footer section -->
+
+      <footer>
+        <!-- <div class="container">
+          &copy; 2023 Dipak Patil. All rights reserved.
+        </div> -->
+
+        <div class="footer">
+          <div class="footer-first">Extra Tech Pvt Ltd</div>
+          <div class="footer-second">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Service</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-third">
+            <ul>
+              <li>Questions</li>
+              <li>Notes</li>
+              <li>Tutorials</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="footer-fourth">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Service</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-rights">
+          extratech42web.io | Copyright &copy; All rights reserved 2023
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  </body>
+</html>
+
+<!-- video stop at 41:53 mint  -->
